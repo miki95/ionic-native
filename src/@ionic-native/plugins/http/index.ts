@@ -141,6 +141,16 @@ export class HTTP extends IonicNativePlugin {
   postJson(url: string, json: any, headers: any): Promise<HTTPResponse> { return; }
 
   /**
+   * Make a PUT request with JSON body
+   * @param url {string} The url to send the request to
+   * @param json {Object} The body of the request
+   * @param headers {Object} The headers to set for this request
+   * @returns {Promise<HTTPResponse>} returns a promise that resolve on success, and reject on failure
+   */
+  @Cordova()
+  putJson(url: string, json: any, headers: any): Promise<HTTPResponse> { return; }
+
+  /**
    *
    * @param url {string} The url to send the request to
    * @param parameters {Object} Parameters to send with the request
