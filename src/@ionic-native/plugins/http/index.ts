@@ -182,4 +182,16 @@ export class HTTP extends IonicNativePlugin {
    */
   @Cordova()
   downloadFile(url: string, body: any, headers: any, filePath: string): Promise<HTTPResponse> { return; }
+
+
+  /**
+   *
+   * @param url {string} The url to send the request to
+   * @param body {Object} The body of the request
+   * @param files {Objec} The files to be uploaded
+   * @param headers {Object} The headers to set for this request
+   * @returns {Promise<HTTPResponse>} returns a promise that resolve on success, and reject on failure
+   */
+  @Cordova()
+  multipartForm(url: string, body: any, files: any, headers: any): Promise<HTTPResponse> { return; }
 }
